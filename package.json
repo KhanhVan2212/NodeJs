@@ -8,16 +8,6 @@
     "watch": "node-sass -w src/resources/scss/app.scss -o src/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cuongfpt/NodeJs.git"
-  },
-  "author": "cuongnmph46738",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cuongfpt/NodeJs/issues"
-  },
-  "homepage": "https://github.com/cuongfpt/NodeJs#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
