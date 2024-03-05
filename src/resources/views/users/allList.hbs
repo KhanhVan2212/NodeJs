@@ -1,0 +1,36 @@
+<div class="container my-5 bg-white ">
+<table class="table border">
+  <thead class="bg-info text-white">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">UserName</th>
+      <th scope="col">Password</th>
+      <th scope="col">Avatar</th>
+      <th scope="col">Email</th>
+      <th scope="col">Role</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+       {{#each users}}
+        <tr>
+          <th scope="row">{{sum @index 1}}</th>
+          <td>{{this.username}}</td>
+          <td>{{this.password}}</td>
+          <td><img src="{{this.avatar}}" alt="" height="50px" width="50px"></td>
+          <td>{{this.email}}</td>
+          <td>{{this.role}}</td>
+          <td>
+           <a href="/users/{{this._id}}/edit"><button type="button" class="btn btn-success">EDIT</button></a> 
+          </td>
+          <td>
+            <a href="/users/delete/{{this._id}}"><button type="button" class="btn btn-danger" confirm("Press a button!\nEither OK or Cancel.")>DELETE</button></a>
+          </td>
+        </tr>
+       {{/each}}
+  </tbody>
+</table>
+
+</div>

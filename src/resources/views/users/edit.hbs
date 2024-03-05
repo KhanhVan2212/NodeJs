@@ -1,0 +1,29 @@
+<div class="row d-flex justify-content-center m-5">
+  <div class="col-md-10">
+    <h3>Update tài khoản</h3>
+     <form method="POST" action="/users/{{users._id}}?_method=PUT">
+      <div class="form-group">
+        <label for="username">UsersName</label>
+         <input type="text" class="form-control" value="{{users.username}}" id="username" name="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+         <input type="password" class="form-control" value="{{users.password}}" id="password" name="password" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" value="{{users.email}}" id="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar</label>
+         <input type="text" class="form-control" value="{{users.avatar}}" id="avatar" name="avatar" />
+      </div>
+       <div class="form-group">
+        <label for="role">Role</label>
+        <input type="number" class="form-control"  value="{{users.role}}"  id="role" name="role" />
+      </div>
+
+      <button type="submit" class="btn btn-primary">SAVE</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<!-- Banner -->
+<div class="jumbotron text-center m-3">
+  <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/11/banner/13C-big-desk-1920x450.png" class="img-fluid" alt="Banner Image">
+</div>
+<div class="mt-5 mb-5">
+  <h2 class="mx-5 hhh">List Product</h2>
+  <div class="row g-2 mx-2 ">
+     {{#each products}}
+    <div class="col-md  d-flex justify-content-center">
+      <div class="card p-2">
+        <div class="text-center">
+          <img
+            src="{{this.image}}"
+            class="img-fluid"
+            width="333"
+          />
+        </div>
+        <div class="content">
+           <a href="/products/{{this.slug}}">
+            <p>{{this.name}}</p>
+            
+           </a>
+           <p>{{this.description}}</p>
+      <span class="price">{{this.price}}$</span>
+          <div class="buttons">
+             <a href="/products/{{this.slug}}">
+            <but  ton class="btn btn-primary">Xem chi tiết </button>
+             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     {{/each}}
+  </div>
+</div>
+<div class="jumbotron text-center m-3 hhss">
+  <img src="https://images.fpt.shop/unsafe/fit-in/1200x200/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/11/16/638357524505028808_H5.png" class="img-fluid" alt="Banner Image" width="100%">
+</div>
+<style>
+  .aaa{
+
+  }
+  .hhss{
+    background-color: white;
+     background-color: #fff; /* Màu nền của box */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); /* Điều chỉnh giá trị để thay đổi bóng đổ */
+  padding: 20px;
+  }
+  .hhh{
+    text-align: center;
+  }
+   
+</style>
